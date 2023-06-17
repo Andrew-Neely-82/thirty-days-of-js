@@ -20,10 +20,14 @@ npm install
 
 ## Usage
 
-1. Start the development server: `npm start`
+1. Start the development server: 
+```bash
+npm start
+```
+
 2. Open your browser and visit `http://localhost:3000` to access the app.
 3. Use the navigation to explore different days and view the corresponding questions and answers.
 
 ## Acknowledgements
 
-The "30 Days of JavaScript" challenge is created by ZTM (Zero To Mastery), an online learning platform. The app is developed by [Your Name] as a personal project for the challenge.
+The "30 Days of JavaScript" challenge is created by ZTM (Zero To Mastery), an online learning platform. The app is developed by myself, Andrew Neely, as a personal project for the challenge.
