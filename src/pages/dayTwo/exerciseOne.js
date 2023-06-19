@@ -134,7 +134,7 @@ console.log("Q25: Use repeat() method to print 30 Days Of JavaScript 2 times");
 console.log(challenge.repeat(2));
 console.log(``);
 
-export const qAndA = [
+export const exerciseOne = [
   {
     q: "Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.",
     a: `let challenge = "30 Days of JavaScript";`,
