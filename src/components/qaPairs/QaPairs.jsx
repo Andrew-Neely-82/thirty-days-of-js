@@ -3,10 +3,8 @@ import CopyCodeBox from "../copyCode/CopyCodeBox";
 const QaPairs = ({ code }) => {
   return code.map((qa, key) => (
     <li className="ol-li" key={key}>
-      <span>
-        {qa.q}
-        <CopyCodeBox code={qa.a} />
-      </span>
+      <span dangerouslySetInnerHTML={{ __html: qa.q }}></span>
+      <CopyCodeBox code={qa.a} />
     </li>
   ));
 };
