@@ -4,37 +4,49 @@
   position: sticky;
   inset: 0;
   height: 48px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: rgb(255, 193, 5);
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: bold;
   box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-  padding: 0 5rem;
+  padding: 0 12px;
+  z-index: 1000;
 
-  .Navbar_name {
+  .Navbar_wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 15rem;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: auto;
 
-    img {
-      height: 24px;
-      width: 24px;
+    .Navbar_name {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 15rem;
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
     }
-  }
 
-  .Navbar_links-container {
-    a {
-      color: black;
-      text-decoration: none;
-      transition: 250ms ease-in-out;
-
-      &:hover {
-        color: gray;
+    .Navbar_links-container {
+      a {
+        color: black;
+        text-decoration: none;
         transition: 250ms ease-in-out;
+
+        &:hover {
+          color: gray;
+          transition: 250ms ease-in-out;
+        }
       }
     }
   }

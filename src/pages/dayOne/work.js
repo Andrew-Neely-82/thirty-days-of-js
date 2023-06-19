@@ -43,36 +43,59 @@ console.log(myAge);
 
 export const qaPairs = [
   {
-    question: "Write a single line comment which says, comments can make code readable",
-    answer: ["let hello;", "let goodbye;", "let goodMorning;", "let goodNight;"],
+    q: "Write a single line comment which says, comments can make code readable",
+    a: "let hello;\nlet goodbye;\nlet goodMorning;\nlet goodNight;",
   },
   {
-    question: "Write another single comment which says, Welcome to 30DaysOfJavaScript",
-    answer: ['let name = "David";', "let age = 50;", "let job = null;", "let hobbies = undefined;"],
+    q: "Write another single comment which says, Welcome to 30DaysOfJavaScript",
+    a: `// Welcome to 30 Days Of JavaScript`,
   },
   {
-    question: "Write a multiline comment which says, comments can make code readable, easy to reuse and informative",
-    answer: ["/*", "This is a multiline comment", "that demonstrates how comments", "can improve code readability", "and provide useful information.", "*/"],
+    q: "Write a multiline comment which says, comments can make code readable, easy to reuse and informative",
+    a: ["/*", "This is a multiline comment", "that demonstrates how comments", "can improve code readability", "and provide useful information.", "*/"],
   },
   {
-    question: "Declare four variables without assigning values",
-    answer: ["let variable1;", "let variable2;", "let variable3;", "let variable4;"],
+    q: "Declare four variables without assigning values",
+    a: ["let variable1;", "let variable2;", "let variable3;", "let variable4;"],
   },
   {
-    question: "Declare four variables with assigned values",
-    answer: ["let variable1 = 10;", "let variable2 = 'Hello';", "let variable3 = true;", "let variable4 = null;"],
+    q: "Declare four variables with assigned values",
+    a: ["let variable1 = 10;", "let variable2 = 'Hello';", "let variable3 = true;", "let variable4 = null;"],
   },
   {
-    question: "Declare variables to store your first name, last name, marital status, country, and age in multiple lines",
-    answer: "let firstName;\nlet lastName;\nlet maritalStatus;\nlet country;\nlet age;",
+    q: "Declare variables to store your first name, last name, marital status, country, and age in multiple lines",
+    a: "let firstName;\nlet lastName;\nlet maritalStatus;\nlet country;\nlet age;",
   },
   {
-    question: "Declare variables to store your first name, last name, marital status, country, and age in a single line",
-    answer: "let firstName, lastName, maritalStatus, country, age;",
+    q: "Declare variables to store your first name, last name, marital status, country, and age in a single line",
+    a: "let firstName, lastName, maritalStatus, country, age;",
   },
   {
-    question: "Declare two variables myAge and yourAge and assign them initial values and log to the browser console.",
-    answer: ["let myAge = 25;", "let yourAge = 30;", "console.log(myAge, yourAge);"],
+    q: "Declare two variables myAge and yourAge and assign them initial values and log to the browser console.",
+    a: ["let myAge = 25;", "let yourAge = 30;", "console.log(myAge, yourAge);"],
   },
-  // Add more question-answer pairs here
 ];
+
+// prettier-ignore
+let unusedVariables = [
+  yourFirstName, 
+  yourLastName, 
+  yourMaritalStatus, 
+  yourCountry, 
+  yourAge, 
+  firstName, 
+  lastName, 
+  maritalStatus, 
+  country, 
+  ageInline,
+  hello,
+  goodbye, 
+  goodMorning, 
+  goodNight,
+  name,
+  age,
+  job,
+  hobbies,
+];
+
+console.log("ignore this! just clearing unused variables ".concat(unusedVariables.slice(0, 100)));

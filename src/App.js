@@ -1,24 +1,28 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar, Footer, Sidebar } from "./components/index.js";
-import { DayOne } from "./pages/export.js";
+import { DayOne, DayTwo } from "./pages/export.js";
 import React from "react";
 import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <Navbar />
-      <Sidebar />
-      <div className="App_content">
-        <Router>
-          <Switch>
-            <Route exact path={"/"} component={""} />
-            <Route exact path={"/day1"} component={DayOne} />
-          </Switch>
-        </Router>
+      <div className="App">
+        <Sidebar />
+        <div className="App_content">
+          <Router>
+            <Switch>
+              <Route exact path={"/"} component={""} />
+              <Route exact path={"/day1"} component={DayOne} />
+              <Route exact path={"/day2"} component={DayTwo} />
+              <Route exact path={"/day3"} component={DayTwo} />
+            </Switch>
+          </Router>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </React.Fragment>
   );
 }
 

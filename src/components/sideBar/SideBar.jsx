@@ -4,6 +4,7 @@ const SideBar = () => {
   //
   const GenerateLinks = () => {
     const links = [];
+
     for (let i = 1; i <= 30; i++) {
       links.push(
         <li key={i}>

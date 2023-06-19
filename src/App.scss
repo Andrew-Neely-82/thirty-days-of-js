@@ -1,8 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 .App {
+  max-width: 1300px;
+  margin: auto;
+
   .App_content {
     display: grid;
     grid-template-columns: auto 1fr;
     margin-left: 20em;
     margin-top: 1.5rem;
+
+    .Day {
+      margin: 1.25rem auto;
+
+      ol {
+        margin: 1.5rem auto;
+
+        .ol-li {
+          margin-top: 3rem;
+          width: 60%;
+          height: fit-content;
+
+          ul {
+            margin-top: 0.5rem;
+
+            li {
+              list-style: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.codeblock {
+  z-index: -15;
+
+  pre {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background: lightgray;
+    padding-block: 0.5em;
+    padding-left: 0.5em;
+    padding-right: auto;
+    z-index: -15;
+
+    &:hover {
+      outline: 2px solid black;
+    }
+
+    code {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: lightgray;
+      color: black;
+      white-space: pre-wrap;
+
+      span {
+        width: 100%;
+      }
+
+      button {
+        background: rgba(80 80 80 / 0.5);
+        border: 2px solid black;
+        border-radius: 4px;
+        margin-right: 0.5em;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+
+        &:hover {
+          background: rgba(120, 120, 120, 0.5);
+        }
+
+        &:active {
+          background: rgba(50 50 50 / 0.5);
+          transition: 100ms ease-in-out;
+        }
+
+        svg {
+          padding: 2px;
+
+          path {
+            fill: white;
+          }
+        }
+
+        .checked {
+          path {
+            fill: lime;
+          }
+        }
+      }
+    }
   }
 }
