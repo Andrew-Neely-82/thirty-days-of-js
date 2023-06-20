@@ -33,71 +33,76 @@
               list-style: none;
             }
           }
-        }
-      }
-    }
-  }
-}
 
-.codeblock {
-  z-index: -15;
+          .codeblock {
+            z-index: -15;
 
-  pre {
-    width: 100%;
-    border: none;
-    border-radius: 4px;
-    background: lightgray;
-    padding-block: 0.5em;
-    padding-left: 0.5em;
-    padding-right: auto;
-    z-index: -15;
+            .pre {
+              align-items: flex-start;
+              width: 100%;
+              border: none;
+              border-radius: 4px;
+              background: lightgray;
+              padding-block: 0.5em;
+              padding-left: 0.5em;
+              padding-right: auto;
+              z-index: -15;
 
-    &:hover {
-      outline: 2px solid black;
-    }
+              &:hover {
+                outline: 2px solid black;
+              }
 
-    code {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      background-color: lightgray;
-      color: black;
-      white-space: pre-wrap;
+              code {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                width: 100%;
+                background-color: lightgray;
+                color: black;
+                white-space: pre-wrap;
 
-      span {
-        width: 100%;
-        word-wrap: break-word;
-      }
+                span {
+                  width: 100%;
+                  word-wrap: break-word;
+                }
 
-      button {
-        background: rgba(80 80 80 / 0.5);
-        border: 2px solid black;
-        border-radius: 4px;
-        margin-right: 0.5em;
-        cursor: pointer;
-        transition: 250ms ease-in-out;
+                button {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 2.5em;
+                  background: rgba(80 80 80 / 0.5);
+                  border: 2px solid black;
+                  border-radius: 4px;
+                  margin-right: 0.5em;
+                  cursor: pointer;
+                  transition: 250ms ease-in-out;
 
-        &:hover {
-          background: rgba(120, 120, 120, 0.5);
-        }
+                  &:hover {
+                    background: rgba(120, 120, 120, 0.5);
+                  }
 
-        &:active {
-          background: rgba(50 50 50 / 0.5);
-          transition: 100ms ease-in-out;
-        }
+                  &:active {
+                    background: rgba(50 50 50 / 0.5);
+                    transition: 100ms ease-in-out;
+                  }
 
-        svg {
-          padding: 2px;
+                  svg {
+                    padding: 2px;
 
-          path {
-            fill: white;
-          }
-        }
+                    path {
+                      fill: white;
+                    }
+                  }
 
-        .checked {
-          path {
-            fill: lime;
+                  .checked {
+                    path {
+                      fill: lime;
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
