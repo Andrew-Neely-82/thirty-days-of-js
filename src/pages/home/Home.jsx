@@ -16,30 +16,32 @@ const Home = () => {
 
   return (
     <div className="Day">
-      <h1>Getting started</h1>
-      <p>30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days. This challenge may take more than 100 days, please just follow your own pace.</p>
-      <ul>
-        <li>
-          <span>Material source: 30 days of JavaScript</span>
-        </li>
-        <li>
-          <span>Author: {Link(author, "Asabeneh Yetayeh")}</span>
-        </li>
-        <li>
-          <span>This sites creator: {Link(me, "Andrew Neely")}</span>
-        </li>
-        <li>
-          <span>Original Site creator: {Link(creator, "Devinesia")}</span>
-        </li>
-        <li>
-          <span>Link to the original site: {Link(original, "Here")}</span>
-        </li>
-      </ul>
-      <h2>Support</h2>
-      <p>You can support the orginal author to produce more educational materials</p>
-      <a href={paypalLink} target="_blank" rel="noreferrer">
-        <img src={paypal} alt="paypal" />
-      </a>
+      <div className="Day-wrapper">
+        <h1>Getting started</h1>
+        <p>30 days of JavaScript programming challenge is a step-by-step guide to learn JavaScript programming language in 30 days. This challenge may take more than 100 days, please just follow your own pace.</p>
+        <ul>
+          <li>
+            <span>Material source: 30 days of JavaScript</span>
+          </li>
+          <li>
+            <span>Author: {Link(author, "Asabeneh Yetayeh")}</span>
+          </li>
+          <li>
+            <span>This sites creator: {Link(me, "Andrew Neely")}</span>
+          </li>
+          <li>
+            <span>Original Site creator: {Link(creator, "Devinesia")}</span>
+          </li>
+          <li>
+            <span>Link to the original site: {Link(original, "Here")}</span>
+          </li>
+        </ul>
+        <h2>Support</h2>
+        <p>You can support the orginal author to produce more educational materials</p>
+        <a href={paypalLink} target="_blank" rel="noreferrer">
+          <img src={paypal} alt="paypal" />
+        </a>
+      </div>
     </div>
   );
 };
