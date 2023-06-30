@@ -37,7 +37,7 @@ const Home = () => {
           </li>
         </ul>
         <h2>Support</h2>
-        <p>You can support the orginal author to produce more educational materials</p>
+        <p>You can support the original author to produce more educational materials</p>
         <a href={paypalLink} target="_blank" rel="noreferrer">
           <img src={paypal} alt="paypal" />
         </a>

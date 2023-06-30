@@ -41,7 +41,7 @@ let firstName, lastName, maritalStatus, country, ageInline;
 let myAge = 33;
 console.log(myAge);
 
-export const qaPairs = [
+export const exerciseOne = [
   {
     q: "Write a single line comment which says, comments can make code readable",
     a: "let hello;\nlet goodbye;\nlet goodMorning;\nlet goodNight;",
@@ -56,7 +56,10 @@ export const qaPairs = [
   },
   {
     q: "Declare four variables without assigning values",
-    a: ["let variable1;", "let variable2;", "let variable3;", "let variable4;"],
+    a: `let variable1;
+let variable2;
+let variable3;
+let variable4;`,
   },
   {
     q: "Declare four variables with assigned values",
@@ -72,7 +75,9 @@ export const qaPairs = [
   },
   {
     q: "Declare two variables myAge and yourAge and assign them initial values and log to the browser console.",
-    a: ["let myAge = 25;", "let yourAge = 30;", "console.log(myAge, yourAge);"],
+    a: `let myAge = 25;
+let yourAge = 30;
+console.log(myAge, yourAge);"`,
   },
 ];
 

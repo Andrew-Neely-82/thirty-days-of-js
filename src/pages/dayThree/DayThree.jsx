@@ -7,7 +7,7 @@ const DayThree = () => {
   return (
     <div className="Day">
       <div className="Day_content">
-        <h2>Day Three Exercises</h2>
+        <h1>Day Three Exercises</h1>
         <h3 id="exerciseOne">Exercise 1</h3>
         <ol>
           <QaPairs code={exerciseOne} />

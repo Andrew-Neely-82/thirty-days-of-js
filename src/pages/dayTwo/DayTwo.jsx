@@ -8,16 +8,16 @@ const DayTwo = () => {
   return (
     <div className="Day">
       <div className="Day_content">
-        <h2>Day Two Exercises</h2>
-        <h3 id="exerciseOne">Exercise 1</h3>
+        <h1>Day Two Exercises</h1>
+        <h2 id="exerciseOne">Exercise 1</h2>
         <ol>
           <QaPairs code={exerciseOne} />
         </ol>
-        <h3 id="exerciseTwo">Exercise 2</h3>
+        <h2 id="exerciseTwo">Exercise 2</h2>
         <ol>
           <QaPairs code={exerciseTwo} />
         </ol>
-        <h3 id="exerciseThree">Exercise 3</h3>
+        <h2 id="exerciseThree">Exercise 3</h2>
         <ol>
           <QaPairs code={exerciseThree} />
         </ol>

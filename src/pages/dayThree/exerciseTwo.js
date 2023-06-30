@@ -73,6 +73,7 @@
 // let lastName = 'Yetayeh'
 
 // Your first name, Asabeneh is longer than your family name, Yetayeh
+
 // ? 10
 // Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
 
@@ -80,6 +81,8 @@
 // let yourAge = 25
 
 // I am 225 years older than you.
+
+// ?
 // Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 
 // Enter birth year: 1995
@@ -87,6 +90,18 @@
 
 // Enter birth year: 2005
 // You are 15. You will be allowed to drive after 3 years.
+
+// ! answer
+// const year = parseInt(prompt("Enter birth year"));
+// const age = new Date().getFullYear() - year;
+
+// if (age >= 18) {
+//   console.log("You are " + age + ". You are old enough to drive");
+// } else {
+//   console.log("You are " + age + ". You will be old enough to drive after " + (18 - age) + " years.");
+// }
+
+// ?
 // Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
 // Enter number of years you live: 100
@@ -95,6 +110,12 @@
 // YYYY-MM-DD HH:mm
 // DD-MM-YYYY HH:mm
 // DD/MM/YYYY HH:mm
+
+// ! answer
+// const yearsAlive = parseInt(prompt('Enter the number of years you live'));
+// const secondsPerYear = 365 * 24 * 60 * 60;
+// const totalSeconds = yearsAlive * secondsPerYear;
+// console.log(`A person can live approximately ${totalSeconds.toLocaleString()} seconds.`);
 
 export const exerciseTwo = [
   {
